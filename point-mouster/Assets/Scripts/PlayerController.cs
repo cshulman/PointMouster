@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour {
 		myAnim = GetComponent<Animator> (); // animator for anim changes
 		//numBooksCollected.text = "Books: " + numBooks + "/" + maxBooks;
 		isPaused = false;
+		wordDisplay.text = "";
         
 	}
     void Flip(float horizontal)//flip to go backward

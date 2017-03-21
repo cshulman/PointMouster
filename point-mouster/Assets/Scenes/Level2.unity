@@ -3987,6 +3987,21 @@ Prefab:
       propertyPath: jumpSpeed
       value: 600
       objectReference: {fileID: 0}
+    - target: {fileID: 114530871343500692, guid: 8b36f3a2780c0164b8a7576dab87953d,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 799985198}
+    - target: {fileID: 114530871343500692, guid: 8b36f3a2780c0164b8a7576dab87953d,
+        type: 2}
+      propertyPath: wordDisplay
+      value: 
+      objectReference: {fileID: 116111315}
+    - target: {fileID: 114530871343500692, guid: 8b36f3a2780c0164b8a7576dab87953d,
+        type: 2}
+      propertyPath: numBooksCollected
+      value: 
+      objectReference: {fileID: 277699520}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b36f3a2780c0164b8a7576dab87953d, type: 2}
   m_IsPrefabParent: 0

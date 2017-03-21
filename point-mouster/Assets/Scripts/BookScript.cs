@@ -66,13 +66,13 @@ public class BookScript : MonoBehaviour {
 			"The & is an operator that returns the memory address of its operand. For example, if var is an integer variable, then &var is its address.", 
 			//fact 2
 			"When you declare a pointer variable, its content is not initialized. You need to initialize a pointer by assigning it a valid address. This is normally done via the address-of operator (&). " +
-			"For example, if pNumber is an int pointer, *pNumber returns the int value \"pointed to\" by pNumber. For example,\\nint number = 88;\\nint * pNumber;\\npNumber = &number;", 
+			"For example, if pNumber is an int pointer, *pNumber returns the int value 'pointed to' by pNumber. For example,\n\nint number = 88;\n\nint * pNumber;\n\npNumber = &number;", 
 			//fact 3
-			"The indirection operator is *. This operator returns the value stored in the address kept in the pointer variable. For example, the following would print “99”:\\nint *pNumber = 99;\\ncout << *pNumber << endl;\n", 
+			"The indirection operator is *. This operator returns the value stored in the address kept in the pointer variable. For example, the following would print “99”:\n\nint *pNumber = 99;\n\ncout << *pNumber << endl;", 
 			//fact 4
-			"In C/C++, by default, arguments are passed into functions by value (except arrays). That is, a clone copy of the argument is made and passed into the function. Changes to the clone copy inside the function do not affect the original argument. \n", 
+			"In C/C++, by default, arguments are passed into functions by value (except arrays). That is, a clone copy of the argument is made and passed into the function. Changes to the clone copy inside the function do not affect the original argument.", 
 			//fact 5
-			"You may wish to modify the original copy directly. Do this by passing a pointer of the object into the function, known as pass-by-reference. For example,\\nint number = 8;\\nsquare(&number);\\n…{\\nvoid square(int * pNumber)}", 
+			"You may wish to modify the original copy directly. Do this by passing a pointer of the object into the function, known as pass-by-reference. For example,\n\nint number = 8;\n\nsquare(&number);\n\n…{\n\nvoid square(int * pNumber)}", 
 
 			/*level 3 facts*/
 
@@ -90,7 +90,7 @@ public class BookScript : MonoBehaviour {
 			"int * copy_ptr; A “deep copy” of a dynamic array creates an identical array in a different part of memory. To do this, first you allocate new memory space (copy_ptr = new int[5];), then copy each element in one at a time: for(int i=0; i<5; i++){copy_ptr[i] = ptr[i];}\n", 
 			//fact 5
 			"The keyword const can be used on pointer parameters, like we do with references. It is used for a similar situation -- it allows parameter passing without copying anything but an address, but protects against changing the data (for functions that should not change the original). " +
-			"For example, \\nconst double * v\\nThis establishes v as a pointer to an object that cannot be changed through the pointer v.\n"
+			"For example, \n\nconst double * v\n\nThis establishes v as a pointer to an object that cannot be changed through the pointer v.\n"
 		};
 						
 		reviewIndices = new List<int>();
