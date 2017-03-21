@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - Enemy
+  - Book
+  - WhenPaused
+  - WhenResumed
+  - WordDisplay
+  - Review
+  - Door
+  - BeginLevel
+  - Objective
+  - BeforeReview
+  - MovingPlatform
+  - Boss
+  - KillPlane
+  - Checkpoint
+  - BossJIT
+  - Level2JIT
+  - Level1Obj
+  - QuestionDisplay
+  - Choice1
+  - Choice2
+  - Choice3
+  - Choice4
+  - Door2
+  - Door3
+  - Controls
+  - Door4
+  - FeedbackDisplay
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1996230019
+    locked: 0
+  - name: Foreground
+    uniqueID: 2897734045
+    locked: 0
+  - name: Enemy
+    uniqueID: 2470220241
+    locked: 0
+  - name: Player
+    uniqueID: 3113929555
+    locked: 0
+  - name: PauseMenu
+    uniqueID: 1156700367
+    locked: 0
