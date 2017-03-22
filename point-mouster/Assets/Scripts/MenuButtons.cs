@@ -20,20 +20,22 @@ public class MenuButtons : MonoBehaviour {
     }
 
 	public void PickBossToGoTo(){
+		Debug.Log ("in PickBossToGoTo");
 		if (currLevel == 1) {
+			Debug.Log ("curr level= " + SceneManager.GetActiveScene ().name);
+			currLevel++;
 			GoToBoss ();
-			currLevel++;
 		} else if (currLevel == 2) {
+			currLevel++;
 			GoToBoss2 ();
-			currLevel++;
 		} else if (currLevel == 3) {
-			GoToBoss3 ();
 			currLevel++;
+			GoToBoss3 ();
 		}
-
 	}
 
 	public void GoToBoss(){
+		Debug.Log ("in GoToBoss");
 		SceneManager.LoadScene ("Boss Battle");
 	}
 

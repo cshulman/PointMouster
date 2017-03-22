@@ -1210,6 +1210,24 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: -0.29
       objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000012529468454, guid: e71e75eb91d93447482aba5f6196637d,
+        type: 2}
+      propertyPath: MinDistance
+      value: 1.0759563
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012822128420, guid: e71e75eb91d93447482aba5f6196637d,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 0.007
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
   m_IsPrefabParent: 0
@@ -1527,6 +1545,19 @@ Prefab:
     - target: {fileID: 1000013483176850, guid: d08adc0c66aa04297920dee405d86cb6, type: 2}
       propertyPath: m_Name
       value: MovingBook 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: d08adc0c66aa04297920dee405d86cb6, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 30.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: d08adc0c66aa04297920dee405d86cb6, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012822128420, guid: d08adc0c66aa04297920dee405d86cb6,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 0.007
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d08adc0c66aa04297920dee405d86cb6, type: 2}
@@ -2345,6 +2376,11 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012822128420, guid: e71e75eb91d93447482aba5f6196637d,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 0.007
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
   m_IsPrefabParent: 0
@@ -2754,6 +2790,19 @@ Prefab:
     - target: {fileID: 4000013326932590, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
       propertyPath: m_LocalPosition.y
       value: -0.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 70.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012822128420, guid: e71e75eb91d93447482aba5f6196637d,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 0.007
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
@@ -3728,6 +3777,19 @@ Prefab:
     - target: {fileID: 4000013326932590, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
       propertyPath: m_LocalPosition.y
       value: -0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012822128420, guid: e71e75eb91d93447482aba5f6196637d,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 55.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.72
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
