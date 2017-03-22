@@ -3241,14 +3241,6 @@ Prefab:
       propertyPath: m_Name
       value: MovingBook (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 38.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.28
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
   m_IsPrefabParent: 0
@@ -3560,11 +3552,6 @@ Prefab:
     - target: {fileID: 4000012410413208, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
       propertyPath: m_RootOrder
       value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000012822128420, guid: e71e75eb91d93447482aba5f6196637d,
-        type: 2}
-      propertyPath: moveSpeed
-      value: 0.007
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
@@ -4586,10 +4573,13 @@ Prefab:
       propertyPath: m_Name
       value: MovingBook (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012822128420, guid: e71e75eb91d93447482aba5f6196637d,
-        type: 2}
-      propertyPath: moveSpeed
-      value: 0.007
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 11.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
@@ -4637,18 +4627,13 @@ Prefab:
       propertyPath: m_Name
       value: MovingBook (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114000012822128420, guid: e71e75eb91d93447482aba5f6196637d,
-        type: 2}
-      propertyPath: moveSpeed
-      value: 0.007
+    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 27.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 47.14
+      value: 1.53
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
