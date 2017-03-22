@@ -1911,6 +1911,11 @@ Prefab:
       propertyPath: m_Offset.y
       value: -1.56
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011855899886, guid: 5d465c69fe5074819a2c00cc65349eac,
+        type: 2}
+      propertyPath: wordDisplay
+      value: 
+      objectReference: {fileID: 462185924}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5d465c69fe5074819a2c00cc65349eac, type: 2}
   m_IsPrefabParent: 0

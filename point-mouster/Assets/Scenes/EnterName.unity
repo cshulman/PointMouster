@@ -1311,7 +1311,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Max: 10 characters'
+  m_Text: 
 --- !u!222 &1769557786
 CanvasRenderer:
   m_ObjectHideFlags: 0
