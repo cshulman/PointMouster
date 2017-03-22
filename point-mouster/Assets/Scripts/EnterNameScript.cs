@@ -16,7 +16,9 @@ public class EnterNameScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        ver = -1;
+        //why -1?
+		ver = -1;
+
         Name = null;
 	
 	}

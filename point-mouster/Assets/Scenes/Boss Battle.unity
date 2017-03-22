@@ -317,8 +317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.9, y: 0.00088501}
-  m_SizeDelta: {x: 400, y: 101}
+  m_AnchoredPosition: {x: 0.9, y: -20}
+  m_SizeDelta: {x: 400, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &46868199
 MonoBehaviour:
@@ -350,7 +350,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: feedback text
 --- !u!222 &46868200
@@ -902,7 +902,7 @@ RectTransform:
   m_GameObject: {fileID: 175161802}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.28, y: 1, z: 1.28}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 46868198}
   m_Father: {fileID: 1616645685}
@@ -910,8 +910,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 163, y: 316}
-  m_SizeDelta: {x: -507, y: -667}
+  m_AnchoredPosition: {x: 163, y: 315.75}
+  m_SizeDelta: {x: -507, y: -666.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175161804
 MonoBehaviour:
@@ -3440,26 +3440,56 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 223000012483364266, guid: 21848fc50d62046689aa6604051c62ce,
+    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
-      propertyPath: m_Camera
+      propertyPath: Health
       value: 
-      objectReference: {fileID: 1392549241}
-    - target: {fileID: 114000012738426720, guid: 21848fc50d62046689aa6604051c62ce,
+      objectReference: {fileID: 1599511267}
+    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010643218132, guid: 21848fc50d62046689aa6604051c62ce,
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 861671776}
+    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 451454780}
+    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1616645686}
+    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 175161806}
+    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1444245704}
+    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
       propertyPath: googleAnalytics
       value: 
       objectReference: {fileID: 1944064656}
+    - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 1599511267}
+    - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 861671776}
+    - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 451454780}
     - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
       propertyPath: clear
@@ -3470,131 +3500,91 @@ Prefab:
       propertyPath: fbPanel
       value: 
       objectReference: {fileID: 175161806}
-    - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 451454780}
     - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
       propertyPath: bossQ
       value: 
       objectReference: {fileID: 1442720599}
-    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: googleAnalytics
-      value: 
-      objectReference: {fileID: 1944064656}
-    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: bossHealth
-      value: 
-      objectReference: {fileID: 861671776}
-    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 451454780}
-    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: clear
-      value: 
-      objectReference: {fileID: 1616645686}
-    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: fbPanel
-      value: 
-      objectReference: {fileID: 175161806}
-    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: googleAnalytics
-      value: 
-      objectReference: {fileID: 1944064656}
-    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: clear
-      value: 
-      objectReference: {fileID: 1616645686}
-    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: fbPanel
-      value: 
-      objectReference: {fileID: 175161806}
-    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: bossQ
-      value: 
-      objectReference: {fileID: 1444245704}
-    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: googleAnalytics
-      value: 
-      objectReference: {fileID: 1944064656}
-    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 451454780}
-    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: fbPanel
-      value: 
-      objectReference: {fileID: 175161806}
-    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: Health
-      value: 
-      objectReference: {fileID: 1599511267}
-    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: bossQ
-      value: 
-      objectReference: {fileID: 1444245704}
-    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: clear
-      value: 
-      objectReference: {fileID: 1616645686}
-    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 451454780}
-    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: bossHealth
-      value: 
-      objectReference: {fileID: 861671776}
-    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: bossQ
-      value: 
-      objectReference: {fileID: 1444245704}
-    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: Health
-      value: 
-      objectReference: {fileID: 1599511267}
-    - target: {fileID: 114000012960275978, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: bossHealth
-      value: 
-      objectReference: {fileID: 861671776}
-    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: Health
-      value: 
-      objectReference: {fileID: 1599511267}
     - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1944064656}
+    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
       propertyPath: Health
       value: 
       objectReference: {fileID: 1599511267}
-    - target: {fileID: 114000010384836856, guid: 21848fc50d62046689aa6604051c62ce,
+    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
       propertyPath: bossHealth
       value: 
       objectReference: {fileID: 861671776}
+    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 451454780}
+    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1616645686}
+    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 175161806}
+    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1444245704}
+    - target: {fileID: 114000014200281418, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1944064656}
+    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 1599511267}
+    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 861671776}
+    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 451454780}
+    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1616645686}
+    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 175161806}
+    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1444245704}
+    - target: {fileID: 114000012449260622, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1944064656}
+    - target: {fileID: 223000012483364266, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1392549241}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21848fc50d62046689aa6604051c62ce, type: 2}
   m_IsPrefabParent: 0
