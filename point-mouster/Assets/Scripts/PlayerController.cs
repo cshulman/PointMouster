@@ -63,6 +63,7 @@ public class PlayerController : MonoBehaviour {
 		//numBooksCollected.text = "Books: " + numBooks + "/" + maxBooks;
 		isPaused = false;
 		wordDisplay.text = "";
+		respawnPosition = new Vector3 (-9.42f, 0.56f, 0);
         
 	}
     void Flip(float horizontal)//flip to go backward
@@ -77,6 +78,13 @@ public class PlayerController : MonoBehaviour {
     }
 	// Update is called once per frame
 	void Update () {
+
+		//pressing x closes canvas 
+		if (Input.GetKeyDown (KeyCode.X)) {
+			gameButton.ClearWordDisplay ();
+		}
+
+
         float horizontal = Input.GetAxis("Horizontal");
         Flip(horizontal);
 		isGrounded = Physics2D.OverlapCircle (groundCheck.position,groundCheckRadius,whatIsGround);
