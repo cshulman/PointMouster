@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour {
 		myAnim = GetComponent<Animator> (); // animator for anim changes
 		//numBooksCollected.text = "Books: " + numBooks + "/" + maxBooks;
 		isPaused = false;
-		wordDisplay.text = "";
+		//wordDisplay.text = "";
 		respawnPosition = new Vector3 (-9.42f, 0.56f, 0);
         
 	}

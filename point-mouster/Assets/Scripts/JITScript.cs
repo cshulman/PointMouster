@@ -25,7 +25,8 @@ public class JITScript : MonoBehaviour {
 			switch (this.tag) {
 
 			case "BeginLevel":
-				wordDisplay.text = "Use the left and right arrow keys to move the player. \n Use spacebar to jump.";
+				wordDisplay.text = "Use the left and right arrow keys to move the player. \n To close a fact display press the x keystroke " +
+					"or click on the x in the top-right corner. \n Use spacebar to jump.";
 				Time.timeScale = 0.0f;
 				Destroy (this.gameObject);
 				break;
@@ -34,7 +35,9 @@ public class JITScript : MonoBehaviour {
 				Destroy (this.gameObject);
 				break;
 			case "Controls":
-				wordDisplay.text = "Press the 'p' key to pause/resume. \n\n Press Spacebar to jump.";
+				//wordDisplay.text = "Press the 'p' key to pause/resume.";
+				wordDisplay.text = "Use the left and right arrow keys to move the player. \nTo close a fact display press the x keystroke " +
+					"or click on the x in the top-right corner. \nUse spacebar to jump.\nPress the 'p' key to pause/resume.";
 				Time.timeScale = 0.0f;
 				Destroy (this.gameObject);
 				break;
