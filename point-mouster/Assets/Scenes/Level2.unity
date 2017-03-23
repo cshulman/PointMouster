@@ -3509,7 +3509,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000014274464732, guid: 2aafa045c66d3483fb4cfde64c9b53c9, type: 2}
       propertyPath: m_TagString
-      value: Door
+      value: level2Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2aafa045c66d3483fb4cfde64c9b53c9, type: 2}

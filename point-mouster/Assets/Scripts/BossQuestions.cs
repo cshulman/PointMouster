@@ -273,7 +273,7 @@ public class BossQuestions : MonoBehaviour {
 		}
 
 		if(scene.name == "Boss Battle 2"){
-			chosenQuestIndex = Random.Range(5,9);
+			chosenQuestIndex = Random.Range(10, 15); //changed for this build to make level 2 into level 3
 			while(indexUsed.Contains(chosenQuestIndex)){
 				chosenQuestIndex = Random.Range(5,9);
 			}

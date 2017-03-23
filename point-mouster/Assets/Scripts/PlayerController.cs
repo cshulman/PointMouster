@@ -189,7 +189,7 @@ public class PlayerController : MonoBehaviour {
 //				}
 			}
 		}
-
+		//boss 1 door
 		if (other.tag == "Door2") {
 			if (BossHealthBar.current == 0) {
 
@@ -219,7 +219,40 @@ public class PlayerController : MonoBehaviour {
 
 				//SceneManager.LoadScene ("Level2");
 					//Changing this so that we can get something to work
-					SceneManager.LoadScene("Level3");
+					SceneManager.LoadScene("Level2");
+			}
+		}
+
+		if (other.tag == "level2Door") {
+			if (BossHealthBar.current == 0) {
+
+				EventHitBuilder eventHitBuilder = new EventHitBuilder();
+            	eventHitBuilder.SetEventCategory ("LevelReached");
+            	eventHitBuilder.SetEventLabel ("");
+            	eventHitBuilder.SetEventValue (2);
+            	string playerName = PlayerPrefs.GetString ("CurrentPlayer");
+				if (playerName != null)
+    				eventHitBuilder.SetEventAction (playerName);
+				else
+    				eventHitBuilder.SetEventAction ("No name");
+    			googleAnalytics.LogEvent (eventHitBuilder);
+				/*
+				Category -- LevelReached
+				Action --name (e.g. chavashulman@gmail.com)
+				Label -- blank
+				Value -- level # 
+				
+				googleAnalytics.LogEvent (new EventHitBuilder ()
+					.SetEventCategory ("LevelReached")
+					.SetEventAction (EnterNameScript.Instance.Name)
+					.SetEventLabel ("")
+					.SetEventValue (2)); //When we create mode for game, it should be entered HERE
+				*/
+
+
+				//SceneManager.LoadScene ("Level2");
+					//Changing this so that we can get something to work
+					SceneManager.LoadScene("Boss Battle 2");
 			}
 		}
 
