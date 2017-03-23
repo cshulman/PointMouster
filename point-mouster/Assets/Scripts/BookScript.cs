@@ -96,7 +96,10 @@ public class BookScript : MonoBehaviour {
 		reviewIndices = new List<int>();
 		reviewWords = new List<string> ();
 //		numBooksCollected.text = "Books: " + numBooks + "/" + maxBooks;
-		numBooksCollected = GameObject.Find("BookScore").GetComponent<Text>();
+		if (GameObject.Find("BookScore") != null)
+			numBooksCollected = GameObject.Find("BookScore").GetComponent<Text>();
+		else
+			Debug.Log("Find bookscore is null");
 
 
 	}
@@ -142,27 +145,26 @@ public class BookScript : MonoBehaviour {
 			print (chosenWordIndex);
 			while(isWordUsed(chosenWordIndex)){ //make sure you haven't displayed this fact already
 				chosenWordIndex = Random.Range(0,5);
-				print("in BookScript while 1. index is ");
-				print (chosenWordIndex);
+				print("in BookScript while 1. index is " + chosenWordIndex);
 			}
 
 		}
 
 		if(scene.name == "Level2"){
-			chosenWordIndex = Random.Range(5,10);
+			chosenWordIndex = Random.Range(10,15);
 			while(isWordUsed(chosenWordIndex)){
 				chosenWordIndex = Random.Range(5,10);
-				print("in BookScript while 2. index is ");
-				print (chosenWordIndex);
+				print("in BookScript while 2. index is " + chosenWordIndex);
 			}
 
 		}
 		if(scene.name == "Level3"){
 			chosenWordIndex = Random.Range(10,15);
+							print("in BookScript while . index is " + chosenWordIndex);
+
 			while(isWordUsed(chosenWordIndex)){
 				chosenWordIndex = Random.Range(10,15);
-				print("in BookScript while 3. index is ");
-				print (chosenWordIndex);
+				print("in BookScript while 3. index is " + chosenWordIndex);
 			}
 		}
 

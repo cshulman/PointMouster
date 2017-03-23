@@ -4,9 +4,35 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour {
 
-	public static int currLevel = 0;
+	public static int currLevel;
+
+	public static MenuButtons getLevel;
 
 	public GoogleAnalyticsV4 googleAnalytics;
+
+	//private static MenuButtons instance = null;
+
+
+	public void Start()
+	{
+		currLevel = 0;
+	}
+	//must initialize all variables!!
+	void Awake () 
+	{
+     /*	if(instance == null)
+     	{
+          	instance = this;
+         	 DontDestroyOnLoad(gameObject);
+     	}
+     	else if(instance != this){
+          Destroy(this.gameObject);
+          return;
+     	}*/
+     	currLevel = 0;
+ 	}
+
+	
 
 	public void PlayGame()
 	{
@@ -30,10 +56,14 @@ public class MenuButtons : MonoBehaviour {
 		if (currLevel == 0) {
 			Debug.Log ("curr level= " + SceneManager.GetActiveScene ().name);
 			currLevel++;
+			Debug.Log ("curr level "  + currLevel);
 			GoToBoss ();
-		} else if (currLevel == 1) {
+		}
+		
+		else if (currLevel == 1) {
 			currLevel++;
-			GoToBoss ();
+			GoToBoss2 ();
+			//GoToLevel3();
 			//GoToBoss2 ();
 		} else if (currLevel == 2) {
 			currLevel++;
@@ -41,14 +71,14 @@ public class MenuButtons : MonoBehaviour {
 		}
 	}
 
-	public void GoToBoss(){
+	public  void GoToBoss(){
 		Debug.Log ("in GoToBoss");
 		SceneManager.LoadScene ("Boss Battle");
 	}
 
-//	public void GoToBoss2(){
-//		SceneManager.LoadScene ("Boss Battle 2");
-//	}
+	public void GoToBoss2(){
+		SceneManager.LoadScene ("Boss Battle 2");
+	}
 
 	public void GoToBoss3(){
 		SceneManager.LoadScene ("Boss Battle 3");
@@ -101,6 +131,17 @@ public class MenuButtons : MonoBehaviour {
 				.SetEventValue (2)); //When we create mode for game, it should be entered HERE
 
 		SceneManager.LoadScene ("Level2");
+	}
+
+	public void GoToLevel3(){
+
+		googleAnalytics.LogEvent (new EventHitBuilder ()
+				.SetEventCategory ("LevelReached")
+				.SetEventAction (EnterNameScript.Instance.Name)
+				.SetEventLabel ("")
+				.SetEventValue (3)); //When we create mode for game, it should be entered HERE
+
+		SceneManager.LoadScene ("Level3");
 	}
 
 	public void HomeScreen(){

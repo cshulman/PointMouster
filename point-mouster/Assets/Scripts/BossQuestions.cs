@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class BossQuestions : MonoBehaviour {
 
 	public GoogleAnalyticsV4 googleAnalytics;
-	public static MenuButtons getLevel;
+	
 
 	public class Question
 	{
@@ -241,7 +241,7 @@ public class BossQuestions : MonoBehaviour {
 		//check level 
 		Scene scene = SceneManager.GetActiveScene();
 		print("Active scene is " + scene.name);
-		print("level is " + getLevel.returnLevel());
+		print("level is " + MenuButtons.currLevel);
 		int chosenQuestIndex = -1;
 
 //		if(scene.name == "Boss Battle"){
@@ -252,8 +252,10 @@ public class BossQuestions : MonoBehaviour {
 //			}
 //
 //		}
+		Debug.Log("current Level: " + MenuButtons.currLevel);
 
-		if(scene.name == "Boss Battle" && (getLevel.returnLevel() == 1)){
+
+		if(scene.name == "Boss Battle"){
 			chosenQuestIndex = Random.Range(0,4);
 			while(indexUsed.Contains(chosenQuestIndex)){ //make sure you haven't used this question already
 				chosenQuestIndex = Random.Range(0,4);
@@ -262,7 +264,7 @@ public class BossQuestions : MonoBehaviour {
 
 		}
 
-		if(scene.name == "Boss Battle"  && (getLevel.returnLevel() == 2) ){
+		if(scene.name == "Boss Battle"  && (MenuButtons.currLevel == 2) ){
 			chosenQuestIndex = Random.Range(5,9);
 			while(indexUsed.Contains(chosenQuestIndex)){
 				chosenQuestIndex = Random.Range(5,9);
@@ -270,17 +272,20 @@ public class BossQuestions : MonoBehaviour {
 
 		}
 
-//		if(scene.name == "Boss Battle 2"){
-//			chosenQuestIndex = Random.Range(5,9);
-//			while(indexUsed.Contains(chosenQuestIndex)){
-//				chosenQuestIndex = Random.Range(5,9);
-//			}
-//
-//		}
+		if(scene.name == "Boss Battle 2"){
+			chosenQuestIndex = Random.Range(5,9);
+			while(indexUsed.Contains(chosenQuestIndex)){
+				chosenQuestIndex = Random.Range(5,9);
+			}
+
+		}
 
 		if(scene.name == "Boss Battle 3"){
 			chosenQuestIndex = Random.Range(10,15);
+			Debug.Log("chosen index " + chosenQuestIndex);
 			while(indexUsed.Contains(chosenQuestIndex)){
+			Debug.Log("in while 3, chosen index " + chosenQuestIndex);
+
 				chosenQuestIndex = Random.Range(10,15);
 			}
 		}
@@ -288,6 +293,7 @@ public class BossQuestions : MonoBehaviour {
 		
 		indexUsed.Add(chosenQuestIndex); //add to questions used so it is not used again
 		//parseCorrectWords(chosenQuestIndex);
+		Debug.Log("index returned: " + chosenQuestIndex);
 		return chosenQuestIndex;
 	}
 	

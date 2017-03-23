@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 222000013278069526}
   - component: {fileID: 114000014130415298}
   - component: {fileID: 114000012394038998}
-  - component: {fileID: 114000012960275978}
+  - component: {fileID: 114440125121529798}
   m_Layer: 5
   m_Name: 0
   m_TagString: Choice1
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 222000011205491914}
   - component: {fileID: 114000014102504126}
   - component: {fileID: 114000010643218132}
-  - component: {fileID: 114000010384836856}
+  - component: {fileID: 114378273161645246}
   m_Layer: 5
   m_Name: 3
   m_TagString: Choice4
@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 114000012891307358}
   - component: {fileID: 225000010665592224}
   - component: {fileID: 114000012135872026}
+  - component: {fileID: 114848630226452660}
   m_Layer: 5
   m_Name: QuestionCanvas
   m_TagString: Untagged
@@ -148,7 +149,7 @@ GameObject:
   - component: {fileID: 222000013301339682}
   - component: {fileID: 114000011444455172}
   - component: {fileID: 114000011078914490}
-  - component: {fileID: 114000012449260622}
+  - component: {fileID: 114936335000496978}
   m_Layer: 5
   m_Name: 2
   m_TagString: Choice3
@@ -184,7 +185,7 @@ GameObject:
   - component: {fileID: 222000011774885670}
   - component: {fileID: 114000013737304868}
   - component: {fileID: 114000010891303282}
-  - component: {fileID: 114000014200281418}
+  - component: {fileID: 114091552541054848}
   m_Layer: 5
   m_Name: 1
   m_TagString: Choice2
@@ -254,7 +255,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{*ptr1[i] = *ptr2[i]}"
+  m_Text: '*arr'
 --- !u!114 &114000010145359790
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,7 +288,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '&ptr2 = ptr1'
+  m_Text: arr[10]
 --- !u!114 &114000010227224034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -309,49 +310,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114000010384836856
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011798702520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 3
-  chosen: 3
-  correct_answer: 0
-  Health: {fileID: 0}
-  bossHealth: {fileID: 0}
-  player: {fileID: 0}
-  clear: {fileID: 0}
-  fbPanel: {fileID: 0}
-  bossQ: {fileID: 0}
-  googleAnalytics: {fileID: 0}
-  feedback: Keep trying!
-  correctFB:
-  - Way to go!
-  - You rock at this!
-  - "Lookin\u2019 good!"
-  - "Wow! I\u2019m impressed!"
-  - Keep at it!
-  - Good going!
-  - You were born a winner!
-  - Victory is yours!
-  - That was awesome!
-  - Great Job!
-  - Knew you could do it
-  - Great Job!
-  - "You\u2019re so good at this!"
-  - That answer was perfect!
-  wrongFB:
-  - Keep going!
-  - Keep trying!
-  - You can do it... Try again!
-  - You WILL succeed!
-  - You are so close to success!
 --- !u!114 &114000010643218132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -391,7 +349,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114000010384836856}
+      - m_Target: {fileID: 114378273161645246}
         m_MethodName: Pushed
         m_Mode: 1
         m_Arguments:
@@ -443,7 +401,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114000014200281418}
+      - m_Target: {fileID: 114091552541054848}
         m_MethodName: Pushed
         m_Mode: 1
         m_Arguments:
@@ -453,7 +411,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114000011030244904
@@ -488,7 +446,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ptr2 = ptr1
+  m_Text: '*(arr+4)'
 --- !u!114 &114000011078914490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -528,7 +486,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114000012449260622}
+      - m_Target: {fileID: 114936335000496978}
         m_MethodName: Pushed
         m_Mode: 1
         m_Arguments:
@@ -538,7 +496,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114000011444455172
@@ -619,7 +577,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114000012960275978}
+      - m_Target: {fileID: 114440125121529798}
         m_MethodName: Pushed
         m_Mode: 1
         m_Arguments:
@@ -629,52 +587,9 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114000012449260622
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000012851735014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 
-  chosen: 0
-  correct_answer: 0
-  Health: {fileID: 0}
-  bossHealth: {fileID: 0}
-  player: {fileID: 0}
-  clear: {fileID: 0}
-  fbPanel: {fileID: 0}
-  bossQ: {fileID: 0}
-  googleAnalytics: {fileID: 0}
-  feedback: 
-  correctFB:
-  - Way to go!
-  - You rock at this!
-  - "Lookin\u2019 good!"
-  - "Wow! I\u2019m impressed!"
-  - Keep at it!
-  - Good going!
-  - You were born a winner!
-  - Victory is yours!
-  - That was awesome!
-  - Great Job!
-  - Knew you could do it
-  - Great Job!
-  - "You\u2019re so good at this!"
-  - That answer was perfect!
-  wrongFB:
-  - Keep going!
-  - Keep trying!
-  - You can do it... Try again!
-  - You WILL succeed!
-  - You are so close to success!
 --- !u!114 &114000012738426720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -707,8 +622,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Given the following declarations:\n\tint * ptr1;\n\tint * ptr2;\n\tptr1
-    = new int[5];\n\twhat statement will produce a shallow copy ? "
+  m_Text: You declare an array, arr, of size 10. How would you access the value at
+    the 4th index?
 --- !u!114 &114000012891307358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -725,49 +640,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114000012960275978
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010869330218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 0
-  chosen: 0
-  correct_answer: 0
-  Health: {fileID: 0}
-  bossHealth: {fileID: 0}
-  player: {fileID: 0}
-  clear: {fileID: 0}
-  fbPanel: {fileID: 0}
-  bossQ: {fileID: 0}
-  googleAnalytics: {fileID: 0}
-  feedback: "Lookin\u2019 good!"
-  correctFB:
-  - Way to go!
-  - You rock at this!
-  - "Lookin\u2019 good!"
-  - "Wow! I\u2019m impressed!"
-  - Keep at it!
-  - Good going!
-  - You were born a winner!
-  - Victory is yours!
-  - That was awesome!
-  - Great Job!
-  - Knew you could do it
-  - Great Job!
-  - "You\u2019re so good at this!"
-  - That answer was perfect!
-  wrongFB:
-  - Keep going!
-  - Keep trying!
-  - You can do it... Try again!
-  - You WILL succeed!
-  - You are so close to success!
 --- !u!114 &114000013617396336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -811,7 +683,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{ptr2[i] = ptr1[i]};"
+  m_Text: It is impossible to access the value at the 4th position.
 --- !u!114 &114000013737304868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -893,7 +765,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114000014200281418
+--- !u!114 &114091552541054848
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -904,8 +776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: 1
-  chosen: 1
+  Name: 
+  chosen: 0
   correct_answer: 0
   Health: {fileID: 0}
   bossHealth: {fileID: 0}
@@ -914,7 +786,7 @@ MonoBehaviour:
   fbPanel: {fileID: 0}
   bossQ: {fileID: 0}
   googleAnalytics: {fileID: 0}
-  feedback: Keep going!
+  feedback: 
   correctFB:
   - Way to go!
   - You rock at this!
@@ -931,11 +803,178 @@ MonoBehaviour:
   - "You\u2019re so good at this!"
   - That answer was perfect!
   wrongFB:
-  - Keep going!
-  - Keep trying!
-  - You can do it... Try again!
-  - You WILL succeed!
-  - You are so close to success!
+  - That was terrible
+  - Better luck next time!
+  - You really went with that answer?
+  - FAIL
+--- !u!114 &114378273161645246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011798702520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  chosen: 0
+  correct_answer: 0
+  Health: {fileID: 0}
+  bossHealth: {fileID: 0}
+  player: {fileID: 0}
+  clear: {fileID: 0}
+  fbPanel: {fileID: 0}
+  bossQ: {fileID: 0}
+  googleAnalytics: {fileID: 0}
+  feedback: 
+  correctFB:
+  - Way to go!
+  - You rock at this!
+  - "Lookin\u2019 good!"
+  - "Wow! I\u2019m impressed!"
+  - Keep at it!
+  - Good going!
+  - You were born a winner!
+  - Victory is yours!
+  - That was awesome!
+  - Great Job!
+  - Knew you could do it
+  - Great Job!
+  - "You\u2019re so good at this!"
+  - That answer was perfect!
+  wrongFB:
+  - That was terrible
+  - Better luck next time!
+  - You really went with that answer?
+  - FAIL
+--- !u!114 &114440125121529798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010869330218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  chosen: 0
+  correct_answer: 0
+  Health: {fileID: 0}
+  bossHealth: {fileID: 0}
+  player: {fileID: 0}
+  clear: {fileID: 0}
+  fbPanel: {fileID: 0}
+  bossQ: {fileID: 0}
+  googleAnalytics: {fileID: 0}
+  feedback: 
+  correctFB:
+  - Way to go!
+  - You rock at this!
+  - "Lookin\u2019 good!"
+  - "Wow! I\u2019m impressed!"
+  - Keep at it!
+  - Good going!
+  - You were born a winner!
+  - Victory is yours!
+  - That was awesome!
+  - Great Job!
+  - Knew you could do it
+  - Great Job!
+  - "You\u2019re so good at this!"
+  - That answer was perfect!
+  wrongFB:
+  - That was terrible
+  - Better luck next time!
+  - You really went with that answer?
+  - FAIL
+--- !u!114 &114848630226452660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012753960700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: QuestionCanvas
+  chosen: 0
+  correct_answer: 1
+  Health: {fileID: 0}
+  bossHealth: {fileID: 0}
+  player: {fileID: 0}
+  clear: {fileID: 0}
+  fbPanel: {fileID: 0}
+  bossQ: {fileID: 0}
+  googleAnalytics: {fileID: 0}
+  feedback: 
+  correctFB:
+  - Way to go!
+  - You rock at this!
+  - "Lookin\u2019 good!"
+  - "Wow! I\u2019m impressed!"
+  - Keep at it!
+  - Good going!
+  - You were born a winner!
+  - Victory is yours!
+  - That was awesome!
+  - Great Job!
+  - Knew you could do it
+  - Great Job!
+  - "You\u2019re so good at this!"
+  - That answer was perfect!
+  wrongFB:
+  - That was terrible
+  - Better luck next time!
+  - You really went with that answer?
+  - FAIL
+--- !u!114 &114936335000496978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012851735014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247a64f16c51a4d569d1898249e68c14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  chosen: 0
+  correct_answer: 0
+  Health: {fileID: 0}
+  bossHealth: {fileID: 0}
+  player: {fileID: 0}
+  clear: {fileID: 0}
+  fbPanel: {fileID: 0}
+  bossQ: {fileID: 0}
+  googleAnalytics: {fileID: 0}
+  feedback: 
+  correctFB:
+  - Way to go!
+  - You rock at this!
+  - "Lookin\u2019 good!"
+  - "Wow! I\u2019m impressed!"
+  - Keep at it!
+  - Good going!
+  - You were born a winner!
+  - Victory is yours!
+  - That was awesome!
+  - Great Job!
+  - Knew you could do it
+  - Great Job!
+  - "You\u2019re so good at this!"
+  - That answer was perfect!
+  wrongFB:
+  - That was terrible
+  - Better luck next time!
+  - You really went with that answer?
+  - FAIL
 --- !u!212 &212000012218432896
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1133,8 +1172,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 6}
-  m_SizeDelta: {x: 0, y: 12}
+  m_AnchoredPosition: {x: 0, y: -0.0000033379}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000011677686330
 RectTransform:

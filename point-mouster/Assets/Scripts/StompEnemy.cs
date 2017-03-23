@@ -26,6 +26,7 @@ public class StompEnemy : MonoBehaviour {
 		index = -1;
 		boss = FindObjectOfType<BossQuestions> ();
 		qCanvas = FindObjectOfType<QuestionCanvas> ();
+		//questionDisplay = FindObjectOfType<Text>();
 		panel = FindObjectOfType<QuestionPanel> ();
 		button1 = GameObject.FindGameObjectWithTag ("Choice1");
 		button2 = GameObject.FindGameObjectWithTag ("Choice2");
@@ -60,6 +61,7 @@ public class StompEnemy : MonoBehaviour {
 		if (other.tag == "Boss") {
 			print("you collided with boss");
 			index = boss.pickQuestion(); //returns index from array 
+			Debug.Log("index: " + index);
 			qCanvas.enableQuestionCanvas ();
 			panel.enable ();
 

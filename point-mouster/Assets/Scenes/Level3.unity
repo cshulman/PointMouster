@@ -1212,11 +1212,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.58
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 4000010960452022, guid: e71e75eb91d93447482aba5f6196637d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.61
+      value: 1.27
       objectReference: {fileID: 0}
     - target: {fileID: 82000012529468454, guid: e71e75eb91d93447482aba5f6196637d,
         type: 2}
@@ -1227,6 +1227,11 @@ Prefab:
         type: 2}
       propertyPath: moveSpeed
       value: 0.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 95329551764070190, guid: e71e75eb91d93447482aba5f6196637d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e71e75eb91d93447482aba5f6196637d, type: 2}

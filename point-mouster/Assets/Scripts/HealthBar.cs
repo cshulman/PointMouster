@@ -17,6 +17,14 @@ public class HealthBar : MonoBehaviour {
 		content.fillAmount = Map (current, 0, 50, 0, 1);
         NameText.text = PlayerPrefs.GetString("CurrentPlayer");
 	}
+
+	void Awake()
+	{
+		current = 50;
+		content.fillAmount = Map (current, 0, 50, 0, 1);
+        NameText.text = PlayerPrefs.GetString("CurrentPlayer");
+	}
+
 	
 	// Update is called once per frame
 	public void Update () {
@@ -33,7 +41,13 @@ public class HealthBar : MonoBehaviour {
 		content.fillAmount = Map (current, 0, 50, 0, 1);
 
 		if (current <= 0)
-		SceneManager.LoadScene ("Gameover");
+		{
+		 	current = 50;
+		 			content.fillAmount = Map (current, 0, 50, 0, 1);
+
+
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
 		
 
 		

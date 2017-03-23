@@ -2269,6 +2269,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224000013944569708, guid: ae04dbe208d27422ca3ac3bfbf71dcdf,
     type: 2}
   m_PrefabInternal: {fileID: 2115052352}
+--- !u!114 &648689201 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010448419574, guid: ae04dbe208d27422ca3ac3bfbf71dcdf,
+    type: 2}
+  m_PrefabInternal: {fileID: 2115052352}
+  m_Script: {fileID: 11500000, guid: 4f8ddec03f27d4d618b9d190aed0bbe7, type: 3}
 --- !u!1 &657227076
 GameObject:
   m_ObjectHideFlags: 0
@@ -3079,6 +3085,146 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 247317609}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689201}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 1610327169}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1082310775}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689201}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 1610327169}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1082310775}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689201}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 1610327169}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1082310775}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689201}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 1610327169}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1082310775}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21848fc50d62046689aa6604051c62ce, type: 2}
   m_IsPrefabParent: 0
@@ -6063,6 +6209,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000013732409946, guid: 5d465c69fe5074819a2c00cc65349eac,
     type: 2}
   m_PrefabInternal: {fileID: 303554659}
+--- !u!114 &1787763174 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011855899886, guid: 5d465c69fe5074819a2c00cc65349eac,
+    type: 2}
+  m_PrefabInternal: {fileID: 303554659}
+  m_Script: {fileID: 11500000, guid: d1bb38d56baf7422d839c24ae46c4e75, type: 3}
 --- !u!4 &1787763179 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013516963478, guid: 5d465c69fe5074819a2c00cc65349eac,

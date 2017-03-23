@@ -92,7 +92,7 @@ public class ButtonPushed : MonoBehaviour {
     			eventHitBuilder.SetEventAction (playerName);
 			else
     			eventHitBuilder.SetEventAction ("No name");
-            googleAnalytics.LogEvent (eventHitBuilder);
+            //googleAnalytics.LogEvent (eventHitBuilder);
             
             //googleAnalytics.LogEvent(eventHitBuilder);​
 
@@ -130,7 +130,7 @@ public class ButtonPushed : MonoBehaviour {
     			eventHitBuilder.SetEventAction (playerName);
 			else
     			eventHitBuilder.SetEventAction ("No name");
-    		googleAnalytics.LogEvent (eventHitBuilder);
+    		//googleAnalytics.LogEvent (eventHitBuilder);
            
 
 			feedback = getWrongFeedback();

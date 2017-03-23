@@ -537,21 +537,156 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689199}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 246304111}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114440125121529798, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 509878719}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689199}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 246304111}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114936335000496978, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 509878719}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689199}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 246304111}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114091552541054848, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 509878719}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689199}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 246304111}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1024465861}
+    - target: {fileID: 114378273161645246, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 509878719}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 509878719}
     - target: {fileID: 223000012483364266, guid: 21848fc50d62046689aa6604051c62ce,
         type: 2}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 247317609}
-    - target: {fileID: 224000011543456680, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.0000033379
-      objectReference: {fileID: 0}
-    - target: {fileID: 224000011543456680, guid: 21848fc50d62046689aa6604051c62ce,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21848fc50d62046689aa6604051c62ce, type: 2}
   m_IsPrefabParent: 0
@@ -1181,7 +1316,8 @@ Prefab:
       propertyPath: m_Size.y
       value: 0.19
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114381194879587308, guid: 5d465c69fe5074819a2c00cc65349eac, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5d465c69fe5074819a2c00cc65349eac, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &320713643
@@ -2464,12 +2600,12 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 2
-    m_MaxSize: 35
+    m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: New Text
 --- !u!222 &602568533
@@ -2494,6 +2630,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224000013944569708, guid: ae04dbe208d27422ca3ac3bfbf71dcdf,
     type: 2}
   m_PrefabInternal: {fileID: 2115052352}
+--- !u!114 &648689199 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010448419574, guid: ae04dbe208d27422ca3ac3bfbf71dcdf,
+    type: 2}
+  m_PrefabInternal: {fileID: 2115052352}
+  m_Script: {fileID: 11500000, guid: 4f8ddec03f27d4d618b9d190aed0bbe7, type: 3}
 --- !u!1 &657227076
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,7 +3648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb4953183c1749cd9f2a5e8cdd09cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  googleAnalytics: {fileID: 0}
+  googleAnalytics: {fileID: 509878719}
   numWords: 17
   questionTemp: 
   choice1: 
@@ -6153,6 +6295,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1000013732409946, guid: 5d465c69fe5074819a2c00cc65349eac,
     type: 2}
   m_PrefabInternal: {fileID: 303554659}
+--- !u!114 &1787763174 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000011855899886, guid: 5d465c69fe5074819a2c00cc65349eac,
+    type: 2}
+  m_PrefabInternal: {fileID: 303554659}
+  m_Script: {fileID: 11500000, guid: d1bb38d56baf7422d839c24ae46c4e75, type: 3}
 --- !u!4 &1787763179 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013516963478, guid: 5d465c69fe5074819a2c00cc65349eac,
@@ -6171,6 +6319,7 @@ GameObject:
   - component: {fileID: 1801066151}
   - component: {fileID: 1801066150}
   - component: {fileID: 1801066149}
+  - component: {fileID: 1801066155}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6291,6 +6440,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1801066155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1801066148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5050a871d8b264a98a91026dcc0f44e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  words: []
+  facts: []
+  reviewWords: []
+  reviewIndices: 
+  numBooks: 0
+  maxBooks: 0
+  numBooksCollected: {fileID: 0}
+  currentBook: 0
 --- !u!1001 &1812477718
 Prefab:
   m_ObjectHideFlags: 0

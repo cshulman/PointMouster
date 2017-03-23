@@ -217,7 +217,9 @@ public class PlayerController : MonoBehaviour {
 				*/
 
 
-				SceneManager.LoadScene ("Level2");
+				//SceneManager.LoadScene ("Level2");
+					//Changing this so that we can get something to work
+					SceneManager.LoadScene("Level3");
 			}
 		}
 
@@ -243,7 +245,9 @@ public class PlayerController : MonoBehaviour {
 					.SetEventLabel ("")
 					.SetEventValue (3)); //When we create mode for game, it should be entered HERE
 				*/
-				SceneManager.LoadScene ("Level3");
+				SceneManager.LoadScene ("Win");
+
+				//SceneManager.LoadScene ("Level3");
 			}
 		}
 
