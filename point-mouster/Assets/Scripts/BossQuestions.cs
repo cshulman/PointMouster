@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 public class BossQuestions : MonoBehaviour {
 
 	public GoogleAnalyticsV4 googleAnalytics;
+	public static MenuButtons getLevel;
 
 	public class Question
 	{
@@ -228,44 +229,6 @@ public class BossQuestions : MonoBehaviour {
 		//}
 	}*/
 
-	/*
-	// breaks word,def string into separate word and definition
-	/*public void parseStr(string toParse){
-		int len = toParse.IndexOf (delim);
-		int len2 = toParse.IndexOf (delim2);
-
-
-		if (len > 0) {
-			wrdTmp = toParse.Substring (0, len); // gets word up till the :
-			defTmp = toParse.Substring(len+1, (len2-len+1) ); // get def up to .
-			print(wrdTmp);
-			print (defTmp);
-		}
-
-	}
-	*/
-
-	
-	//version of parseStr for 4 mult choice 
-	/*public void parseStr(string toParse){
-		 print("in parseStr");
- 	     int len = toParse.IndexOf (delim1);
- 		 int len2 = toParse.IndexOf (delim2);
-		 int len3 = toParse.IndexOf(delim3);
-		 int len4 = toParse.IndexOf(delim4);
-		 int len5 = toParse.IndexOf(delim5);
-
- 		 if (len > 0) {	
-      	      questionTemp = toParse.Substring (0, len); // gets question up to ?
-      	      print("question is: " + questionTemp);
-              choice1 = toParse.Substring(len+1, (len2 - len+1)); //gets first choice up to #
-              choice2 = toParse.Substring(len2+1, (len3 - len2 +1)); // gets second choice up to $
-              choice3 = toParse.Substring(len3+1, (len4 - len3 +1)); // gets second choice up to %
-              choice4 = toParse.Substring(len4+1, (len5 - len4 +1)); // gets second choice up to !
-
-		 	  answer = toParse.Substring(len4+1, (len5-len4+1)); // gets answer
-		} 
-	}*/
 
 	public string getQuestionTempStr(){
 		return questionTemp;
@@ -278,21 +241,43 @@ public class BossQuestions : MonoBehaviour {
 		//check level 
 		Scene scene = SceneManager.GetActiveScene();
 		print("Active scene is " + scene.name);
+		print("level is " + getLevel.returnLevel());
 		int chosenQuestIndex = -1;
-		if(scene.name == "Boss Battle"){
+
+//		if(scene.name == "Boss Battle"){
+//			chosenQuestIndex = Random.Range(0,4);
+//			while(indexUsed.Contains(chosenQuestIndex)){ //make sure you haven't used this question already
+//				chosenQuestIndex = Random.Range(0,4);
+//
+//			}
+//
+//		}
+
+		if(scene.name == "Boss Battle" && (getLevel.returnLevel() == 1)){
 			chosenQuestIndex = Random.Range(0,4);
 			while(indexUsed.Contains(chosenQuestIndex)){ //make sure you haven't used this question already
 				chosenQuestIndex = Random.Range(0,4);
+
 			}
 
 		}
-		if(scene.name == "Boss Battle 2"){
+
+		if(scene.name == "Boss Battle"  && (getLevel.returnLevel() == 2) ){
 			chosenQuestIndex = Random.Range(5,9);
 			while(indexUsed.Contains(chosenQuestIndex)){
 				chosenQuestIndex = Random.Range(5,9);
 			}
 
 		}
+
+//		if(scene.name == "Boss Battle 2"){
+//			chosenQuestIndex = Random.Range(5,9);
+//			while(indexUsed.Contains(chosenQuestIndex)){
+//				chosenQuestIndex = Random.Range(5,9);
+//			}
+//
+//		}
+
 		if(scene.name == "Boss Battle 3"){
 			chosenQuestIndex = Random.Range(10,15);
 			while(indexUsed.Contains(chosenQuestIndex)){

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuButtons : MonoBehaviour {
 
-	public static int currLevel = 1;
+	public static int currLevel = 0;
 
 	public GoogleAnalyticsV4 googleAnalytics;
 
@@ -19,16 +19,23 @@ public class MenuButtons : MonoBehaviour {
         SceneManager.LoadScene("Level1");
     }
 
+	public int returnLevel()
+	{
+
+		return currLevel;
+	}
+
 	public void PickBossToGoTo(){
 		Debug.Log ("in PickBossToGoTo");
-		if (currLevel == 1) {
+		if (currLevel == 0) {
 			Debug.Log ("curr level= " + SceneManager.GetActiveScene ().name);
 			currLevel++;
 			GoToBoss ();
-		} else if (currLevel == 2) {
+		} else if (currLevel == 1) {
 			currLevel++;
-			GoToBoss2 ();
-		} else if (currLevel == 3) {
+			GoToBoss ();
+			//GoToBoss2 ();
+		} else if (currLevel == 2) {
 			currLevel++;
 			GoToBoss3 ();
 		}
@@ -39,9 +46,9 @@ public class MenuButtons : MonoBehaviour {
 		SceneManager.LoadScene ("Boss Battle");
 	}
 
-	public void GoToBoss2(){
-		SceneManager.LoadScene ("Boss Battle 2");
-	}
+//	public void GoToBoss2(){
+//		SceneManager.LoadScene ("Boss Battle 2");
+//	}
 
 	public void GoToBoss3(){
 		SceneManager.LoadScene ("Boss Battle 3");

@@ -31,13 +31,13 @@ public class JITScript : MonoBehaviour {
 				Destroy (this.gameObject);
 				break;
 			case "Objective":
-				wordDisplay.text = "You may encounter some helpful people along your journey...\nMake sure you take their advice.";
+				wordDisplay.text = "Use the left and right arrow keys to move the player. \nTo close a fact display press the x keystroke " +
+					"or click on the x in the top-right corner. \nUse spacebar to jump.\nPress the 'p' key to pause/resume.";
 				Destroy (this.gameObject);
 				break;
 			case "Controls":
 				//wordDisplay.text = "Press the 'p' key to pause/resume.";
-				wordDisplay.text = "Use the left and right arrow keys to move the player. \nTo close a fact display press the x keystroke " +
-					"or click on the x in the top-right corner. \nUse spacebar to jump.\nPress the 'p' key to pause/resume.";
+				wordDisplay.text = "You may encounter some helpful people along your journey...\nMake sure you take their advice.";
 				Time.timeScale = 0.0f;
 				Destroy (this.gameObject);
 				break;
