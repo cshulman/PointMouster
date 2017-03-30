@@ -73,6 +73,8 @@ public class ButtonPushed : MonoBehaviour {
 		int questionID_int = BossQuestions.getQuestionID();//BossQuestions.Instance.indexUsed.Item[questionID_idx];
 		string questionID = questionID_int.ToString();
 
+		int version = Version.Instance.getVersion();
+
 
 		/*
 		if player chooses correct answer, 
@@ -109,7 +111,11 @@ public class ButtonPushed : MonoBehaviour {
 			player.rightSound.Play ();
 			bossHealth.changeBar (10);
 			//BossQuestions.questionsUsed.Add (StompEnemy.ques);
-			fbPanel.enableFBPanel(feedback, true); //enable feedback panel
+			if(version == 1 || version == 3){
+				Debug.Log("positive or pos + neg feedback version");
+				fbPanel.enableFBPanel(feedback, true); //enable feedback panel
+			}
+			
 			clear.ClearQuestionDisplay ();
 			//Pause(10);
 			//yield return new WaitForSeconds(10);
@@ -137,7 +143,12 @@ public class ButtonPushed : MonoBehaviour {
 			print("feedback received: " + getWrongFeedback());
 			//Health.changeBar (10);	
 			player.wrongSound.Play ();
-			fbPanel.enableFBPanel(feedback, false); //enable feedback panel
+
+			if(version == 2 || version == 3){
+				Debug.Log("negative or pos + neg feedback version");
+				fbPanel.enableFBPanel(feedback, false); //enable feedback panel
+			}
+			
 			//yield return new WaitForSeconds(0);
 		}
 		//clear.ClearQuestionDisplay ();

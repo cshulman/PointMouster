@@ -4020,6 +4020,11 @@ Prefab:
       propertyPath: numBooksCollected
       value: 
       objectReference: {fileID: 277699520}
+    - target: {fileID: 114530871343500692, guid: 8b36f3a2780c0164b8a7576dab87953d,
+        type: 2}
+      propertyPath: gameButton
+      value: 
+      objectReference: {fileID: 1850672417}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8b36f3a2780c0164b8a7576dab87953d, type: 2}
   m_IsPrefabParent: 0

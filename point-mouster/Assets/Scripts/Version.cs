@@ -8,7 +8,7 @@ public class Version : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		version = getVersion();
+		version = InitVersion();
 		
 	}
 
@@ -31,9 +31,14 @@ public class Version : MonoBehaviour {
 	}
 
 	//private method
-	int getVersion() {
+	private int InitVersion() {
 		version = Random.Range(1,4);
 		Debug.Log("in getVersion: version = " + version);
+		return version;
+	}
+
+	
+	public int getVersion() {
 		return version;
 	}
 }

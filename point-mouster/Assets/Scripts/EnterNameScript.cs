@@ -7,7 +7,7 @@ public class EnterNameScript : MonoBehaviour {
 
 	public GoogleAnalyticsV4 googleAnalytics;
 
-    public static EnterNameScript Instance;
+    public static EnterNameScript Instance; //used to access ver from FeedbackPanel script
 
     public Text NameInputFieldText;
     public Text RequiredText;
@@ -20,8 +20,14 @@ public class EnterNameScript : MonoBehaviour {
 		ver = -1;
 
         Name = null;
+
 	
 	}
+
+    void Awake() {
+        
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -56,4 +62,8 @@ public class EnterNameScript : MonoBehaviour {
         SceneManager.LoadScene("TitleScreen");
     }
 
+
+    private int getVersion(){
+        return ver;
+    }
 }

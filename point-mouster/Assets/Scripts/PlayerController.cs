@@ -64,6 +64,11 @@ public class PlayerController : MonoBehaviour {
 		isPaused = false;
 		//wordDisplay.text = "";
 		respawnPosition = new Vector3 (-9.42f, 0.56f, 0);
+
+		if(gameButton == null){
+			Debug.Log("gameButton == null");
+			//gameButton = GameObject.FindGameObjectsWithTag("CanvasTag");
+		}
         
 	}
     void Flip(float horizontal)//flip to go backward

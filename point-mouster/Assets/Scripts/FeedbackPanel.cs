@@ -8,6 +8,7 @@ public class FeedbackPanel : MonoBehaviour {
 	public ButtonPushed btnPushed;
 	//public GameObject button;
 
+
 	void Awake() {
 		print("in Awake for FeedbackPanel");
 		p = GameObject.FindGameObjectWithTag("FeedbackDisplay");
@@ -43,16 +44,24 @@ public class FeedbackPanel : MonoBehaviour {
 
 	//called by to enable feedback panel
 	public void enableFBPanel(string feedback, bool correct) {
-		print("in enableFBPanel of FeedbackPanel script");
-		fbDisplay.text = feedback;
-		if(correct){
-			fbDisplay.color = Color.green;
+		Debug.Log("in enableFBPanel()");
+
+		int version = Version.Instance.getVersion();
+
+		fbDisplay.text = feedback; //get feedback text to display
+
+	
+		if(correct) {
+	         fbDisplay.color = Color.green;
+	    } else if(!correct) {
+			 Debug.Log("incorrect answer in enableFBPanel");
+			 fbDisplay.color = Color.red;
 		} else {
-			fbDisplay.color = Color.red;
+			 Debug.Log("some weird error has occurred");
 		}
-		//this.GetComponent<SpriteRenderer>().enabled = true;
 		this.GetComponent<Image>().enabled = true;
 	}
+
 
 	public void disableFBPanel (){
 		print("in disableFBPanel of FeedbackPanel script");
