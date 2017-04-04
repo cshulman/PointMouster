@@ -48,6 +48,7 @@ public class FeedbackPanel : MonoBehaviour {
 
 		int version = Version.Instance.getVersion();
 
+
 		fbDisplay.text = feedback; //get feedback text to display
 
 	

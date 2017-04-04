@@ -114,6 +114,9 @@ public class ButtonPushed : MonoBehaviour {
 			if(version == 1 || version == 3){
 				Debug.Log("positive or pos + neg feedback version");
 				fbPanel.enableFBPanel(feedback, true); //enable feedback panel
+			} else {
+				feedback = "correct";
+				fbPanel.enableFBPanel(feedback, true); //enable feedback panel
 			}
 			
 			clear.ClearQuestionDisplay ();
@@ -147,6 +150,10 @@ public class ButtonPushed : MonoBehaviour {
 			if(version == 2 || version == 3){
 				Debug.Log("negative or pos + neg feedback version");
 				fbPanel.enableFBPanel(feedback, false); //enable feedback panel
+			} else {
+				feedback = "incorrect";  //CHANGE VAL OF FEEDBACK
+				fbPanel.enableFBPanel(feedback, false);
+
 			}
 			
 			//yield return new WaitForSeconds(0);
