@@ -54,8 +54,7 @@ public class BookScript : MonoBehaviour {
 			//fact 3
 			"All pointers in a program are likely going to occupy the same amount of space in memory (the size in memory of a pointer depends on the platform where the program runs).", 
 			//fact 4
-			"The delete[] operator \tdeallocates the memory block pointed to by ptr (if not null), releasing the storage space previously allocated to it by a call to operator new[] " +
-			"and rendering that pointer location invalid. For example, delete ptr1;",
+			"The delete[] operator \tdeallocates the memory block pointed to by ptr (if not null), releasing the storage space previously allocated to it by a call to operator new[] and rendering that pointer location invalid. For example, delete ptr1;",
 			//fact 5
 			"Memory leaks occur when new memory is allocated dynamically and never deallocated. " +
 			"A dangling pointer is a pointer whose value is the address of memory that the program no longer owns).", 

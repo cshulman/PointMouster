@@ -83,7 +83,7 @@ public class BossQuestions : MonoBehaviour {
 			"Dangling pointer", "Memory leak", "Type mismatch", "Segmentation fault", "1"));
 		//question 4
 		questions.Add (new Question ("Pointers are used to dynamically allocate memory space. This memory space must be freed once you are done using it to avoid memory leaks. Choose the correct statement to free a 1d array of pointers, ptrarr to double with 10 elements. \n",
-			"free(ptrarr)", "delete ptrarr", "delete *ptrarr", " ~ *ptrarr", "1"));  
+			"free(ptrarr)", "delete[] ptrarr", "delete *ptrarr", " ~ *ptrarr", "1"));  
 		//question 5
 		questions.Add (new Question ("What problem/error will likely result from the following code?\n\tint * ptr = NULL;\n\t{ \nint x; \t\nptr = &x;\n}\n",
 			"Memory Leak", "Type Mismatch", "Dangling Pointer", "Segmentation Fault", ""));
@@ -119,7 +119,7 @@ public class BossQuestions : MonoBehaviour {
 			"&ptr2 = ptr1", "ptr2 = ptr1", "ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{ptr2[i] = ptr1[i]};", "ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{*ptr1[i] = *ptr2[i]}", "1")); 
 		//question 4
 		questions.Add (new Question ("Given the following declarations:\n\tint * ptr1;\n\tint * ptr2;\n\tptr1 = new int[5];\n\twhat statement will produce a deep copy ? ",
-			"&ptr2 = ptr1", "ptr2 = ptr1", "ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{ptr2[i] = ptr1[i]};", "'ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{*ptr1[i] = *ptr2[i]}", "0")); 
+			"&ptr2 = ptr1", "ptr2 = ptr1", "ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{ptr2[i] = ptr1[i]};", "'ptr2 = new int[5];\nfor(int i = 0; i<5; i++)\n\t{*ptr1[i] = *ptr2[i]}", "2")); 
 		//question 5
 		questions.Add (new Question (" Given the function: \nbool isFound(const char *chrPtr, char c){\n}\nWhich of the following would be the correct declaration for declaring a variable which will traverse 'const chrPtr *someText' ?\n",
 			"const *ptr;", "const char ptr;", "const char *ptr;", "char *ptr;", "2"));
