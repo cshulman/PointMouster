@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
@@ -115,6 +115,7 @@ public class BookScript : MonoBehaviour {
 
 	//increment book count and change the text
 	public void updateBookTracker(){
+		Debug.Log("in updateBookTracker");
 		numBooks++;
 		print("numBooks" + numBooks);
         numBooksCollected = GameObject.Find("BookScore").GetComponent<Text>();
