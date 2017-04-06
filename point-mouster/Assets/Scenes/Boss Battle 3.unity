@@ -697,6 +697,16 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: 495.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1686918071}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21848fc50d62046689aa6604051c62ce, type: 2}
   m_IsPrefabParent: 0

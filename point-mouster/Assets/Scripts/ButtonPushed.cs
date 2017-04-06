@@ -94,7 +94,7 @@ public class ButtonPushed : MonoBehaviour {
     			eventHitBuilder.SetEventAction (playerName);
 			else
     			eventHitBuilder.SetEventAction ("No name");
-            //googleAnalytics.LogEvent (eventHitBuilder);
+            googleAnalytics.LogEvent (eventHitBuilder);
             
             //googleAnalytics.LogEvent(eventHitBuilder);​
 
@@ -126,7 +126,7 @@ public class ButtonPushed : MonoBehaviour {
 
 	
 		} 
-		if (chosen != (int)correct_answer)
+		else if (chosen != (int)correct_answer)
 		{	
 			print("chose wrong answer");
 
@@ -139,7 +139,7 @@ public class ButtonPushed : MonoBehaviour {
     			eventHitBuilder.SetEventAction (playerName);
 			else
     			eventHitBuilder.SetEventAction ("No name");
-    		//googleAnalytics.LogEvent (eventHitBuilder);
+    		googleAnalytics.LogEvent (eventHitBuilder);
            
 
 			feedback = getWrongFeedback();
@@ -157,6 +157,8 @@ public class ButtonPushed : MonoBehaviour {
 			}
 			
 			//yield return new WaitForSeconds(0);
+		} else {
+			Debug.Log("some error occurred");
 		}
 		//clear.ClearQuestionDisplay ();
 	}

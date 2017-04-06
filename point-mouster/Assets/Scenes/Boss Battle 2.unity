@@ -3225,6 +3225,41 @@ Prefab:
       propertyPath: googleAnalytics
       value: 
       objectReference: {fileID: 1082310775}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: googleAnalytics
+      value: 
+      objectReference: {fileID: 1082310775}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: fbPanel
+      value: 
+      objectReference: {fileID: 1610327169}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossHealth
+      value: 
+      objectReference: {fileID: 280745618}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: Health
+      value: 
+      objectReference: {fileID: 648689201}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1787763174}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: bossQ
+      value: 
+      objectReference: {fileID: 1686918071}
+    - target: {fileID: 114848630226452660, guid: 21848fc50d62046689aa6604051c62ce,
+        type: 2}
+      propertyPath: clear
+      value: 
+      objectReference: {fileID: 1801066150}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21848fc50d62046689aa6604051c62ce, type: 2}
   m_IsPrefabParent: 0
